@@ -1,0 +1,264 @@
+/* Advanced Gradient Definitions */
+
+/* PRIMARY GRADIENTS */
+.gradient-primary {
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+}
+
+.gradient-primary-hover {
+  background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+}
+
+/* SECONDARY GRADIENTS */
+.gradient-secondary {
+  background: linear-gradient(135deg, #06b6d4 0%, #0ea5e9 100%);
+}
+
+.gradient-accent {
+  background: linear-gradient(135deg, #ec4899 0%, #f43f5e 100%);
+}
+
+/* RAINBOW GRADIENTS */
+.gradient-rainbow {
+  background: linear-gradient(
+    90deg,
+    #ff0000,
+    #ff7f00,
+    #ffff00,
+    #00ff00,
+    #0000ff,
+    #4b0082,
+    #9400d3
+  );
+}
+
+.gradient-rainbow-vertical {
+  background: linear-gradient(
+    180deg,
+    #ff0000,
+    #ff7f00,
+    #ffff00,
+    #00ff00,
+    #0000ff,
+    #4b0082,
+    #9400d3
+  );
+}
+
+/* VIBRANT GRADIENTS */
+.gradient-vibrant-pink {
+  background: linear-gradient(135deg, #ff006e 0%, #fb5607 100%);
+}
+
+.gradient-vibrant-blue {
+  background: linear-gradient(135deg, #0077b6 0%, #00b4d8 100%);
+}
+
+.gradient-vibrant-purple {
+  background: linear-gradient(135deg, #7209b7 0%, #b5179e 100%);
+}
+
+.gradient-vibrant-green {
+  background: linear-gradient(135deg, #06a77d 0%, #2ecc71 100%);
+}
+
+.gradient-vibrant-orange {
+  background: linear-gradient(135deg, #ff9f1c 0%, #ffbf69 100%);
+}
+
+/* DARK GRADIENTS FOR BG */
+.gradient-dark {
+  background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+}
+
+.gradient-dark-blue {
+  background: linear-gradient(135deg, #1e3a8a 0%, #0c4a6e 100%);
+}
+
+.gradient-dark-purple {
+  background: linear-gradient(135deg, #3f0f64 0%, #2d1b4e 100%);
+}
+
+/* TEXT GRADIENTS */
+.gradient-text {
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-vibrant {
+  background: linear-gradient(135deg, #ff006e 0%, #00b4d8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-rainbow {
+  background: linear-gradient(
+    90deg,
+    #ff0000,
+    #ff7f00,
+    #ffff00,
+    #00ff00,
+    #0000ff,
+    #4b0082,
+    #9400d3
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* BORDER GRADIENTS */
+.gradient-border {
+  position: relative;
+  border: 2px solid;
+  border-image: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%) 1;
+}
+
+.gradient-border-primary::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 2px;
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+}
+
+/* MOVING GRADIENTS */
+.gradient-moving {
+  background: linear-gradient(
+    90deg,
+    #3b82f6,
+    #8b5cf6,
+    #06b6d4,
+    #3b82f6
+  );
+  background-size: 200% 200%;
+  animation: gradientShift 8s ease infinite;
+}
+
+.gradient-moving-fast {
+  background: linear-gradient(
+    90deg,
+    #ff006e,
+    #fb5607,
+    #ffbe0b,
+    #ff006e
+  );
+  background-size: 200% 200%;
+  animation: gradientShift 4s ease infinite;
+}
+
+/* MESH GRADIENT EFFECT */
+.gradient-mesh {
+  background: 
+    radial-gradient(circle at 20% 50%, #3b82f6 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, #8b5cf6 0%, transparent 50%),
+    radial-gradient(circle at 40% 80%, #06b6d4 0%, transparent 50%);
+  background-color: #0f172a;
+}
+
+.gradient-mesh-vibrant {
+  background:
+    radial-gradient(circle at 20% 50%, #ff006e 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, #fb5607 0%, transparent 50%),
+    radial-gradient(circle at 40% 20%, #00b4d8 0%, transparent 50%);
+  background-color: #0f172a;
+}
+
+/* GLASS MORPHISM EFFECT */
+.glass {
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-hover:hover {
+  background: rgba(15, 23, 42, 0.8);
+  border-color: rgba(59, 130, 246, 0.3);
+}
+
+.glass-glow {
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 0 20px rgba(59, 130, 246, 0.1);
+}
+
+/* NEON EFFECTS */
+.neon-blue {
+  text-shadow: 0 0 10px #3b82f6, 0 0 20px #3b82f6, 0 0 30px #3b82f6;
+  box-shadow: 0 0 10px #3b82f6, 0 0 20px #3b82f6;
+}
+
+.neon-pink {
+  text-shadow: 0 0 10px #ff006e, 0 0 20px #ff006e, 0 0 30px #ff006e;
+  box-shadow: 0 0 10px #ff006e, 0 0 20px #ff006e;
+}
+
+.neon-cyan {
+  text-shadow: 0 0 10px #06b6d4, 0 0 20px #06b6d4, 0 0 30px #06b6d4;
+  box-shadow: 0 0 10px #06b6d4, 0 0 20px #06b6d4;
+}
+
+/* SHADOW EFFECTS WITH GRADIENTS */
+.shadow-gradient {
+  box-shadow: 
+    0 10px 30px rgba(59, 130, 246, 0.2),
+    0 0 60px rgba(139, 92, 246, 0.1);
+}
+
+.shadow-gradient-hover:hover {
+  box-shadow: 
+    0 20px 40px rgba(59, 130, 246, 0.3),
+    0 0 80px rgba(139, 92, 246, 0.2);
+}
+
+.shadow-gradient-pink {
+  box-shadow: 
+    0 10px 30px rgba(255, 0, 110, 0.2),
+    0 0 60px rgba(251, 86, 7, 0.1);
+}
+
+/* BACKGROUND PATTERNS */
+.pattern-grid {
+  background-image: 
+    linear-gradient(rgba(59, 130, 246, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59, 130, 246, 0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+.pattern-dots {
+  background-image: radial-gradient(circle, rgba(59, 130, 246, 0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* BLUR EFFECTS */
+.blur-heavy {
+  backdrop-filter: blur(20px);
+}
+
+.blur-light {
+  backdrop-filter: blur(5px);
+}
+
+/* OPACITY GRADIENTS */
+.gradient-opacity {
+  background: linear-gradient(
+    180deg,
+    rgba(59, 130, 246, 1) 0%,
+    rgba(59, 130, 246, 0) 100%
+  );
+}
+
+.gradient-opacity-reverse {
+  background: linear-gradient(
+    180deg,
+    rgba(59, 130, 246, 0) 0%,
+    rgba(59, 130, 246, 1) 100%
+  );
+}

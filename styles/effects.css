@@ -1,0 +1,302 @@
+/* Premium Visual Effects and Utilities */
+
+/* Glassmorphism Effect */
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.glassmorphism-dark {
+  background: rgba(15, 21, 53, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(168, 85, 247, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(168, 85, 247, 0.1);
+}
+
+/* Neon Border Effect */
+.neon-border {
+  position: relative;
+  padding: 1px;
+  background: linear-gradient(45deg, #a855f7, #00d9ff, #ff6b35);
+  border-radius: 0.75rem;
+}
+
+.neon-border::before {
+  content: '';
+  position: absolute;
+  inset: 1px;
+  background: #0a0e27;
+  border-radius: calc(0.75rem - 1px);
+  z-index: -1;
+}
+
+/* Gradient Text with Animation */
+.gradient-text-animated {
+  background: linear-gradient(90deg, #a855f7, #00d9ff, #ff6b35, #a855f7);
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientFlow 4s ease infinite;
+}
+
+/* Premium Button Hover Effect */
+.premium-button-hover {
+  position: relative;
+  overflow: hidden;
+}
+
+.premium-button-hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.5s ease;
+}
+
+.premium-button-hover:hover::before {
+  left: 100%;
+}
+
+/* Floating Animation for Elements */
+.float-animate {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Smooth Scroll Enhancement */
+.smooth-scroll {
+  scroll-behavior: smooth;
+}
+
+/* Backdrop Blur Variants */
+.backdrop-blur-sm {
+  backdrop-filter: blur(4px);
+}
+
+.backdrop-blur-md {
+  backdrop-filter: blur(12px);
+}
+
+.backdrop-blur-lg {
+  backdrop-filter: blur(20px);
+}
+
+.backdrop-blur-xl {
+  backdrop-filter: blur(40px);
+}
+
+/* Gradient Variants */
+.gradient-primary-to-secondary {
+  background: linear-gradient(135deg, #a855f7, #00d9ff);
+}
+
+.gradient-primary-to-accent {
+  background: linear-gradient(135deg, #a855f7, #ff6b35);
+}
+
+.gradient-secondary-to-accent {
+  background: linear-gradient(135deg, #00d9ff, #ff6b35);
+}
+
+.gradient-full {
+  background: linear-gradient(135deg, #a855f7, #00d9ff, #ff6b35);
+  background-size: 200% 200%;
+}
+
+/* Shadow Variants */
+.shadow-glow-purple {
+  box-shadow: 0 0 30px rgba(168, 85, 247, 0.3);
+}
+
+.shadow-glow-cyan {
+  box-shadow: 0 0 30px rgba(0, 217, 255, 0.3);
+}
+
+.shadow-glow-orange {
+  box-shadow: 0 0 30px rgba(255, 107, 53, 0.3);
+}
+
+.shadow-glow-multi {
+  box-shadow: 0 0 30px rgba(168, 85, 247, 0.2), 0 0 60px rgba(0, 217, 255, 0.2);
+}
+
+/* Border Gradient */
+.border-gradient {
+  position: relative;
+  background: #0a0e27;
+}
+
+.border-gradient::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 0.75rem;
+  padding: 1px;
+  background: linear-gradient(135deg, #a855f7, #00d9ff, #ff6b35);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+/* Text Glow */
+.text-glow {
+  text-shadow: 0 0 10px currentColor;
+}
+
+/* Hover Scale with Shadow */
+.hover-scale-glow {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-scale-glow:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 20px rgba(168, 85, 247, 0.4));
+}
+
+/* Card Hover Effect */
+.card-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-color: rgba(168, 85, 247, 0.3);
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  border-color: rgba(168, 85, 247, 0.8);
+  box-shadow: 0 20px 40px rgba(168, 85, 247, 0.2);
+}
+
+/* Animated Gradient Border */
+.animated-gradient-border {
+  position: relative;
+  background: #0a0e27;
+  border-radius: 0.75rem;
+}
+
+.animated-gradient-border::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 0.75rem;
+  padding: 2px;
+  background: linear-gradient(45deg, #a855f7, #00d9ff, #ff6b35, #a855f7);
+  background-size: 300% 300%;
+  animation: borderRotate 3s linear infinite;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+@keyframes borderRotate {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Fade In Animation */
+.animate-fadeIn {
+  animation: fadeInSmooth 0.6s ease-out;
+}
+
+@keyframes fadeInSmooth {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Line Animation */
+.line-animate {
+  position: relative;
+  display: inline-block;
+}
+
+.line-animate::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #a855f7, #00d9ff);
+  transition: width 0.3s ease;
+}
+
+.line-animate:hover::after {
+  width: 100%;
+}
+
+/* Mesh Gradient */
+.mesh-gradient {
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.1) 0%, rgba(0, 217, 255, 0.1) 25%, rgba(255, 107, 53, 0.1) 50%);
+  filter: blur(50px);
+}
+
+/* Premium Input Focus */
+input:focus,
+textarea:focus,
+select:focus {
+  box-shadow: inset 0 0 0 2px rgba(168, 85, 247, 0.1), 0 0 0 3px rgba(168, 85, 247, 0.2);
+}
+
+/* Code Block Styling */
+code {
+  background: rgba(168, 85, 247, 0.1);
+  color: #a855f7;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+pre {
+  background: rgba(15, 21, 53, 0.8);
+  border: 1px solid rgba(168, 85, 247, 0.2);
+  border-radius: 0.75rem;
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+/* Link Underline Animation */
+a {
+  position: relative;
+  text-decoration: none;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: linear-gradient(90deg, #a855f7, #00d9ff);
+  transition: width 0.3s ease;
+}
+
+a:hover::after {
+  width: 100%;
+}
