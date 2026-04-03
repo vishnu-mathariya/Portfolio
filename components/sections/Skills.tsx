@@ -53,14 +53,14 @@ export default function Skills() {
         </div>
 
         {/* Summary Stats */}
-        <ScrollReveal delay={0.4} className="mt-16 md:mt-24 pt-12 md:pt-16 border-t border-purple-500/20">
+        {/* <ScrollReveal delay={0.4} className="mt-16 md:mt-24 pt-12 md:pt-16 border-t border-purple-500/20">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
             <StatCard label="Total Skills" value={skillsData.reduce((acc, cat) => acc + cat.skills.length, 0)} />
             <StatCard label="Categories" value={skillsData.length} />
             <StatCard label="Years Exp" value="10+" />
             <StatCard label="Expertise" value="Expert" />
           </div>
-        </ScrollReveal>
+        </ScrollReveal> */}
       </div>
     </section>
   );
@@ -92,20 +92,20 @@ function SkillCard({ skill, index, delay }: SkillCardProps) {
   );
 }
 
-interface StatCardProps {
-  label: string;
-  value: string | number;
-}
+// interface StatCardProps {
+//   label: string;
+//   value: string | number;
+// }
 
-function StatCard({ label, value }: StatCardProps) {
-  return (
-    <div className="text-center md:text-left p-4 md:p-6 rounded-xl bg-gradient-to-br from-purple-500/10 to-cyan-500/5 border border-purple-500/20 hover:border-purple-500/40 transition-all duration-300">
-      <div className="text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent mb-2">
-        {value}
-      </div>
-      <p className="text-xs md:text-sm text-gray-400 uppercase tracking-wider font-semibold">
-        {label}
-      </p>
-    </div>
-  );
-}
+// function StatCard({ label, value }: StatCardProps) {
+//   return (
+//     <div className="text-center md:text-left p-4 md:p-6 rounded-xl bg-gradient-to-br from-purple-500/10 to-cyan-500/5 border border-purple-500/20 hover:border-purple-500/40 transition-all duration-300">
+//       <div className="text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent mb-2">
+//         {value}
+//       </div>
+//       <p className="text-xs md:text-sm text-gray-400 uppercase tracking-wider font-semibold">
+//         {label}
+//       </p>
+//     </div>
+//   );
+// }
