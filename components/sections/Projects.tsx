@@ -50,7 +50,7 @@ export default function Projects() {
                   </p>
 
                   {/* Metrics */}
-                  {project.metrics && (
+                  {/* {project.metrics && (
                     <div className="grid grid-cols-2 gap-3 sm:gap-4 mb-6 sm:mb-8 p-3 sm:p-4 md:p-6 bg-slate-800/30 rounded-lg border border-slate-700/50">
                       {Object.entries(project.metrics).map(([key, value]) => (
                         <div key={key}>
@@ -61,7 +61,7 @@ export default function Projects() {
                         </div>
                       ))}
                     </div>
-                  )}
+                  )} */}
 
                   {/* Technologies */}
                   <div className="mb-6 sm:mb-8">
@@ -81,7 +81,7 @@ export default function Projects() {
                   </div>
 
                   {/* Action Buttons */}
-                  <div className="flex gap-4 mt-auto pt-4 border-t border-slate-700/50">
+                  {/* <div className="flex gap-4 mt-auto pt-4 border-t border-slate-700/50">
                     <Link
                       href={project.link}
                       className="flex-1 px-4 py-3 rounded-lg text-center font-semibold text-white bg-gradient-to-r from-purple-600 to-cyan-500 hover:shadow-lg hover:shadow-purple-500/50 transition-all duration-300 transform hover:scale-105"
@@ -94,7 +94,7 @@ export default function Projects() {
                     >
                       Live Demo
                     </Link>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </ScrollReveal>
