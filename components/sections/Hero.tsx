@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { useState, useEffect } from 'react';
-import Link from 'next/link';
-import AnimatedText from '@/components/animations/AnimatedText';
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import AnimatedText from "@/components/animations/AnimatedText";
 
 export default function Hero() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -12,8 +12,8 @@ export default function Hero() {
       setMousePosition({ x: e.clientX, y: e.clientY });
     };
 
-    window.addEventListener('mousemove', handleMouseMove);
-    return () => window.removeEventListener('mousemove', handleMouseMove);
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
 
   const handleDownloadResume = () => {
@@ -74,10 +74,10 @@ Timezone: IST (UTC+5:30)
 Generated: ${new Date().toLocaleDateString()}
     `;
 
-    const element = document.createElement('a');
-    const file = new Blob([resumeData], { type: 'text/plain' });
+    const element = document.createElement("a");
+    const file = new Blob([resumeData], { type: "text/plain" });
     element.href = URL.createObjectURL(file);
-    element.download = 'Vishnu_Mathariya_Resume.txt';
+    element.download = "Vishnu_Mathariya_Resume.txt";
     document.body.appendChild(element);
     element.click();
     document.body.removeChild(element);
@@ -99,11 +99,20 @@ Generated: ${new Date().toLocaleDateString()}
             {/* Main Heading */}
             <div className="space-y-4">
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
-                <AnimatedText text="Hey, I'm " className="text-white" stagger={false} />
-                <span className="gradient-text">Vishnu Mathariya</span>
+                <AnimatedText
+                  text="Hey, I'm "
+                  className="text-white"
+                  stagger={false}
+                />
+
+                <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-[length:200%_auto] bg-clip-text text-transparent animate-gradient">
+                  Vishnu Mathariya
+                </span>
               </h1>
               <p className="text-base sm:text-lg md:text-xl text-gray-400 leading-relaxed max-w-md animate-fade-in delay-200">
-                React Developer with 3+ years of experience building responsive and scalable web applications. Specialized in React.js, Next.js, and modern frontend technologies.
+                React Developer with 3+ years of experience building responsive
+                and scalable web applications. Specialized in React.js, Next.js,
+                and modern frontend technologies.
               </p>
             </div>
 
@@ -121,12 +130,13 @@ Generated: ${new Date().toLocaleDateString()}
               >
                 Get In Touch
               </Link>
-              
             </div>
 
             {/* Scroll Indicator */}
             <div className="flex flex-col items-center gap-2 pt-8 animate-bounce">
-              <span className="text-xs text-gray-500 uppercase tracking-widest">Scroll to explore</span>
+              <span className="text-xs text-gray-500 uppercase tracking-widest">
+                Scroll to explore
+              </span>
               <svg
                 className="w-6 h-6 text-gray-500"
                 fill="none"
@@ -151,8 +161,16 @@ Generated: ${new Date().toLocaleDateString()}
 
               {/* Floating Cards */}
               {[
-                { delay: 0, color: 'gradient-secondary', position: 'top-1/4 -right-12' },
-                { delay: 1, color: 'gradient-accent', position: 'bottom-1/4 -left-12' },
+                {
+                  delay: 0,
+                  color: "gradient-secondary",
+                  position: "top-1/4 -right-12",
+                },
+                {
+                  delay: 1,
+                  color: "gradient-accent",
+                  position: "bottom-1/4 -left-12",
+                },
               ].map((card, index) => (
                 <div
                   key={index}
@@ -165,13 +183,22 @@ Generated: ${new Date().toLocaleDateString()}
 
               {/* Tech Stack Icons */}
               <div className="absolute inset-0 flex items-center justify-center text-6xl gap-4">
-                <span className="animate-float" style={{ animationDelay: '0s' }}>
+                <span
+                  className="animate-float"
+                  style={{ animationDelay: "0s" }}
+                >
                   ⚛️
                 </span>
-                <span className="animate-float" style={{ animationDelay: '0.5s' }}>
+                <span
+                  className="animate-float"
+                  style={{ animationDelay: "0.5s" }}
+                >
                   🎨
                 </span>
-                <span className="animate-float" style={{ animationDelay: '1s' }}>
+                <span
+                  className="animate-float"
+                  style={{ animationDelay: "1s" }}
+                >
                   🚀
                 </span>
               </div>
