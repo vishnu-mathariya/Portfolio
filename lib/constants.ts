@@ -95,20 +95,20 @@ export const projectsData = [
   },
 
   {
-    id: 8,
-    title: "Personal Portfolio Website",
-    description:
-      "Engineered a modern, scalable portfolio web application using Next.js App Router and TypeScript. Designed reusable UI components with Radix UI and Tailwind CSS, integrated theme switching, and implemented form validation and analytics. Optimized for performance, accessibility, and seamless user experience across devices.",
-    technologies: [
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "Radix UI",
-      "Zod",
-      "Vercel Analytics",
-    ],
-    category: "Frontend",
-  },
+  id: 8,
+  title: "Personal Portfolio Website",
+  description:
+    "Built a scalable portfolio using Next.js and TypeScript with reusable UI, theme switching, and optimized performance.",
+  technologies: [
+    "Next.js",
+    "TypeScript",
+    "Tailwind CSS",
+    "Radix UI",
+    "Zod",
+    "Vercel Analytics",
+  ],
+  category: "Frontend",
+},
 ];
 
 // Skills Data

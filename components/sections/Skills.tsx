@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import { skillsData } from '@/lib/constants';
-import ScrollReveal from '@/components/animations/ScrollReveal';
+import { skillsData } from "@/lib/constants";
+import ScrollReveal from "@/components/animations/ScrollReveal";
 
 export default function Skills() {
   return (
@@ -10,10 +10,15 @@ export default function Skills() {
         {/* Section Header */}
         <ScrollReveal className="mb-16 md:mb-24">
           <div>
-            <span className="text-purple-400 text-xs md:text-sm font-bold uppercase tracking-widest">Expertise</span>
-            <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold mt-3 md:mt-4 mb-4 md:mb-6">My Skills</h2>
+            <span className="text-purple-400 text-xs md:text-sm font-bold uppercase tracking-widest">
+              Expertise
+            </span>
+            <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold mt-3 md:mt-4 mb-4 md:mb-6">
+              My Skills
+            </h2>
             <p className="text-gray-400 text-base md:text-lg max-w-2xl">
-              Proficient in various front-end and back-end technologies, with hands-on experience across multiple domains
+              Proficient in various front-end and back-end technologies, with
+              hands-on experience across multiple domains
             </p>
             <div className="h-1 w-20 md:w-32 bg-gradient-to-r from-purple-500 to-cyan-500 rounded-full mt-4 md:mt-6" />
           </div>
@@ -51,16 +56,6 @@ export default function Skills() {
             </ScrollReveal>
           ))}
         </div>
-
-        {/* Summary Stats */}
-        {/* <ScrollReveal delay={0.4} className="mt-16 md:mt-24 pt-12 md:pt-16 border-t border-purple-500/20">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-            <StatCard label="Total Skills" value={skillsData.reduce((acc, cat) => acc + cat.skills.length, 0)} />
-            <StatCard label="Categories" value={skillsData.length} />
-            <StatCard label="Years Exp" value="10+" />
-            <StatCard label="Expertise" value="Expert" />
-          </div>
-        </ScrollReveal> */}
       </div>
     </section>
   );
@@ -91,21 +86,3 @@ function SkillCard({ skill, index, delay }: SkillCardProps) {
     </ScrollReveal>
   );
 }
-
-// interface StatCardProps {
-//   label: string;
-//   value: string | number;
-// }
-
-// function StatCard({ label, value }: StatCardProps) {
-//   return (
-//     <div className="text-center md:text-left p-4 md:p-6 rounded-xl bg-gradient-to-br from-purple-500/10 to-cyan-500/5 border border-purple-500/20 hover:border-purple-500/40 transition-all duration-300">
-//       <div className="text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent mb-2">
-//         {value}
-//       </div>
-//       <p className="text-xs md:text-sm text-gray-400 uppercase tracking-wider font-semibold">
-//         {label}
-//       </p>
-//     </div>
-//   );
-// }
