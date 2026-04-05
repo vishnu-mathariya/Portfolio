@@ -78,6 +78,37 @@ export const projectsData = [
     ],
     category: "Frontend",
   },
+
+  {
+    id: 7,
+    title: "Salvus-Tech",
+    description:
+      "A dynamic and scalable web platform designed for Salvus Technology to present digital solutions, enhance brand presence, and improve user interaction through modern design.",
+    technologies: [
+      "Next.js",
+      "Tailwind CSS",
+      "TypeScript",
+      "Component-Based Architecture",
+      "Responsive UI",
+    ],
+    category: "Frontend",
+  },
+
+  {
+    id: 8,
+    title: "Personal Portfolio Website",
+    description:
+      "Engineered a modern, scalable portfolio web application using Next.js App Router and TypeScript. Designed reusable UI components with Radix UI and Tailwind CSS, integrated theme switching, and implemented form validation and analytics. Optimized for performance, accessibility, and seamless user experience across devices.",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Radix UI",
+      "Zod",
+      "Vercel Analytics",
+    ],
+    category: "Frontend",
+  },
 ];
 
 // Skills Data

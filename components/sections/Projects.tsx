@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { projectsData } from '@/lib/constants';
-import ScrollReveal from '@/components/animations/ScrollReveal';
-import Link from 'next/link';
+import { projectsData } from "@/lib/constants";
+import ScrollReveal from "@/components/animations/ScrollReveal";
+import Link from "next/link";
 
 export default function Projects() {
   return (
@@ -10,10 +10,15 @@ export default function Projects() {
       <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
         {/* Section Header */}
         <ScrollReveal className="text-center mb-12 md:mb-20">
-          <span className="text-purple-400 text-xs sm:text-sm font-bold uppercase tracking-widest">Portfolio</span>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mt-3 md:mt-4 mb-4 md:mb-6">Featured Projects</h2>
+          <span className="text-purple-400 text-xs sm:text-sm font-bold uppercase tracking-widest">
+            Portfolio
+          </span>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mt-3 md:mt-4 mb-4 md:mb-6">
+            Featured Projects
+          </h2>
           <p className="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto px-2">
-            A selection of projects showcasing my expertise and technical capabilities
+            A selection of projects showcasing my expertise and technical
+            capabilities
           </p>
         </ScrollReveal>
 
@@ -49,8 +54,6 @@ export default function Projects() {
                     {project.description}
                   </p>
 
-                  
-
                   {/* Technologies */}
                   <div className="mb-6 sm:mb-8">
                     <p className="text-xs text-gray-500 uppercase tracking-wide font-semibold mb-2 sm:mb-3">
@@ -67,8 +70,6 @@ export default function Projects() {
                       ))}
                     </div>
                   </div>
-
-                
                 </div>
               </div>
             </ScrollReveal>
@@ -78,16 +79,25 @@ export default function Projects() {
         {/* CTA Section */}
         <ScrollReveal delay={0.4} className="text-center">
           <div className="p-12 rounded-2xl bg-gradient-to-br from-purple-500/10 to-cyan-500/10 border border-purple-500/20">
-            <h3 className="text-2xl font-bold text-white mb-4">Ready to Collaborate?</h3>
+            <h3 className="text-2xl font-bold text-white mb-4">
+              Ready to Collaborate?
+            </h3>
             <p className="text-gray-400 mb-8 max-w-xl mx-auto">
-              Let&apos;s bring your vision to life. I&apos;m always interested in working on exciting, challenging projects.
+              Let&apos;s bring your vision to life. I&apos;m always interested
+              in working on exciting, challenging projects.
             </p>
-            <Link
-              href="#contact"
-              className="inline-block px-8 py-4 rounded-full font-bold text-white bg-gradient-to-r from-purple-600 to-cyan-500 hover:shadow-lg hover:shadow-purple-500/50 transition-all duration-300 transform hover:scale-105"
+
+            <button
+              onClick={() => {
+                const section = document.getElementById("contact");
+                if (section) {
+                  section.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
+              className="cursor-pointer inline-block px-8 py-4 rounded-full font-bold text-white bg-gradient-to-r from-purple-600 to-cyan-500 hover:shadow-lg hover:shadow-purple-500/50 transition-all duration-300 transform hover:scale-105"
             >
               Start a Project
-            </Link>
+            </button>
           </div>
         </ScrollReveal>
       </div>
