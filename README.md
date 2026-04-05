@@ -1,8 +1,15 @@
-# Portfolio Web App
+# 🚀 Vishnu Portfolio Web App
 
-A professional personal portfolio website built with modern React and Next.js technologies, including smooth section transitions, responsive UI, and theme support.
+[![Live Demo](https://img.shields.io/badge/Live-Demo-green?style=for-the-badge)](https://vishnu-mathariya-portfolio.vercel.app)
+
+🌐 **Live Demo:**  
+👉 https://vishnu-mathariya-portfolio.vercel.app
+
+---
 
 ## 🧩 Project Summary
+
+A professional personal portfolio website built with modern React and Next.js technologies, including smooth section transitions, responsive UI, and theme support.
 
 - Framework: Next.js 16 (App Router)
 - Language: TypeScript
@@ -11,6 +18,8 @@ A professional personal portfolio website built with modern React and Next.js te
 - Animations: CSS and custom utility components
 - Form handling: react-hook-form + zod
 - Analytics: @vercel/analytics
+
+---
 
 ## 🚀 Features
 
@@ -24,7 +33,9 @@ A professional personal portfolio website built with modern React and Next.js te
 - Dark/light theme support via `next-themes`
 - Responsive mobile-first layout
 
-## 📁 Folder structure
+---
+
+## 📁 Folder Structure
 
 - `app/` - route entry and main page
 - `components/` - reusable UI blocks and sections
@@ -33,57 +44,11 @@ A professional personal portfolio website built with modern React and Next.js te
 - `lib/` - constants, utilities, animation helpers
 - `styles/` - global CSS and theme assets
 
+---
+
 ## 🛠️ Setup Instructions
 
 1. Install dependencies
 
 ```bash
 npm install
-```
-
-2. Dev server
-
-```bash
-npm run dev
-```
-
-3. Production build
-
-```bash
-npm run build
-```
-
-4. Start built app
-
-```bash
-npm run start
-```
-
-5. Lint checks
-
-```bash
-npm run lint
-```
-
-## 🔧 Customization
-
-- Update text, data, links in `components/sections/*.tsx`.
-- Theme settings are in `components/theme-provider.tsx` and `styles/globals.css`.
-- Add or modify UI elements under `components/ui/*`.
-
-## 📦 Dependencies (selected)
-
-- `next`, `react`, `react-dom`
-- `tailwindcss`, `@tailwindcss/postcss`
-- `@radix-ui/react-*` component primitives
-- `lucide-react`, `embla-carousel-react`, `recharts`
-- `react-hook-form`, `zod`, `@hookform/resolvers`
-- `next-themes`, `@vercel/analytics`
-
-## 🧪 Development notes
-
-- File-based sections are rendered from `app/page.tsx` in order.
-- UI components use `class-variance-authority` + `clsx` for variant styles.
-- The project uses Radix UI with custom wrappers in `components/ui`.
-
-
