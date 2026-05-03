@@ -14,7 +14,9 @@ export default function Experience() {
         <ScrollReveal className="mb-12 md:mb-16">
           <div className="inline-block">
             <span className="text-blue-400 text-xs sm:text-sm font-bold uppercase tracking-widest">Career</span>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mt-2 md:mt-3">Work Experience</h2>
+            {/* <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mt-2 md:mt-3"> */}
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mt-2">
+              Work Experience</h2>
             <div className="h-1 w-16 md:w-20 gradient-primary mt-3 md:mt-4" />
           </div>
         </ScrollReveal>

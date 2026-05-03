@@ -13,7 +13,8 @@ export default function Skills() {
             <span className="text-purple-400 text-xs md:text-sm font-bold uppercase tracking-widest">
               Expertise
             </span>
-            <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold mt-3 md:mt-4 mb-4 md:mb-6">
+            {/* <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold mt-3 md:mt-4 mb-4 md:mb-6"> */}
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mt-2">
               My Skills
             </h2>
             <p className="text-gray-400 text-base md:text-lg max-w-2xl">

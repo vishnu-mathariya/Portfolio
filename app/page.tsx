@@ -10,7 +10,7 @@ import CTA from "@/components/sections/CTA";
 
 export default function Home() {
   return (
-    <main className="bg-gradient-to-b from-gradient-dark via-slate-900 to-gradient-dark">
+    <main className="bg-linear-to-b from-gradient-dark via-slate-900 to-gradient-dark">
       {/* Navigation */}
       <Navigation />
 

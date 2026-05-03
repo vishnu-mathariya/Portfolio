@@ -6,10 +6,10 @@ import Link from "next/link";
 
 export default function Projects() {
   return (
-    <section id="projects" className="relative py-20 md:py-32 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
+    <section id="skills" className="relative py-20 md:py-32 overflow-hidden">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <ScrollReveal className="text-center mb-12 md:mb-20">
+        {/* <ScrollReveal className="text-center mb-12 md:mb-20">
           <span className="text-purple-400 text-xs sm:text-sm font-bold uppercase tracking-widest">
             Portfolio
           </span>
@@ -20,6 +20,23 @@ export default function Projects() {
             A selection of projects showcasing my expertise and technical
             capabilities
           </p>
+        </ScrollReveal> */}
+
+        <ScrollReveal className="mb-16 md:mb-24">
+          <div>
+            <span className="text-purple-400 text-xs md:text-sm font-bold uppercase tracking-widest">
+              Portfolio
+            </span>
+            {/* <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold mt-3 md:mt-4 mb-4 md:mb-6"> */}
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mt-2">
+              Featured Projects
+            </h2>
+            <p className="text-gray-400 text-base md:text-lg max-w-2xl">
+              A selection of projects showcasing my expertise and technical
+              capabilities
+            </p>
+            <div className="h-1 w-20 md:w-32 bg-linear-to-br from-purple-500 to-cyan-500 rounded-full mt-4 md:mt-6" />
+          </div>
         </ScrollReveal>
 
         {/* Projects Grid */}
@@ -31,7 +48,7 @@ export default function Projects() {
               delay={index * 0.1}
               className="group h-full"
             >
-                <div className="h-full rounded-xl sm:rounded-2xl overflow-hidden bg-linear-to-br from-slate-800/50 to-slate-900/30 border border-purple-500/20 hover:border-purple-500/50 transition-all duration-300 hover:shadow-xl hover:shadow-purple-500/20 flex flex-col">
+              <div className="h-full rounded-xl sm:rounded-2xl overflow-hidden bg-linear-to-br from-slate-800/50 to-slate-900/30 border border-purple-500/20 hover:border-purple-500/50 transition-all duration-300 hover:shadow-xl hover:shadow-purple-500/20 flex flex-col">
                 {/* Color Header Block */}
                 <div className="h-1 sm:h-2 bg-linear-to-r from-purple-500 to-cyan-500" />
 
