@@ -94,26 +94,26 @@ export default function About() {
                   animation: orbit-path 4s linear infinite;
                 }
               `}</style>
-              <div className="rounded-2xl glow-animation overflow-hidden p-4 sm:p-6 bg-gradient-to-br from-purple-500/10 to-cyan-500/10 border border-purple-500/20 w-full max-w-md">
+              <div className="rounded-2xl glow-animation overflow-hidden p-4 sm:p-6 bg-linear-to-br from-purple-500/10 to-cyan-500/10 border border-purple-500/20 w-full max-w-md">
                 <div className="relative w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 mx-auto flex items-center justify-center float-animation">
                   {/* Floating orbiting dots */}
                   <div className="absolute w-full h-full">
-                    <div className="absolute w-2 h-2 bg-gradient-to-r from-purple-400 to-cyan-400 rounded-full top-0 left-1/2 -translate-x-1/2 orbit-animation" />
+                    <div className="absolute w-2 h-2 bg-linear-to-r from-purple-400 to-cyan-400 rounded-full top-0 left-1/2 -translate-x-1/2 orbit-animation" />
                     <div
-                      className="absolute w-1.5 h-1.5 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-full bottom-1/4 right-1/4 orbit-animation"
+                      className="absolute w-1.5 h-1.5 bg-linear-to-r from-cyan-400 to-purple-400 rounded-full bottom-1/4 right-1/4 orbit-animation"
                       style={{
                         animationDirection: "reverse",
                         animationDelay: "1s",
                       }}
                     />
                     <div
-                      className="absolute w-1.5 h-1.5 bg-gradient-to-r from-purple-400 to-cyan-400 rounded-full bottom-1/4 left-1/4 orbit-animation"
+                      className="absolute w-1.5 h-1.5 bg-linear-to-r from-purple-400 to-cyan-400 rounded-full bottom-1/4 left-1/4 orbit-animation"
                       style={{ animationDelay: "2s" }}
                     />
                   </div>
 
                   {/* Center Icon */}
-                  <div className="relative text-3xl sm:text-4xl md:text-5xl z-10 bg-gradient-to-br from-purple-600/40 to-cyan-600/40 backdrop-blur-sm w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full flex items-center justify-center border border-purple-400/40">
+                  <div className="relative text-3xl sm:text-4xl md:text-5xl z-10 bg-linear-to-br from-purple-600/40 to-cyan-600/40 backdrop-blur-sm w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full flex items-center justify-center border border-purple-400/40">
                     🚀
                   </div>
                 </div>
@@ -136,9 +136,9 @@ export default function About() {
             ].map((info, index) => (
               <div
                 key={index}
-                className="text-center p-3 md:p-4 rounded-xl bg-gradient-to-br from-purple-500/10 to-cyan-500/5 border border-purple-500/20 hover:border-purple-500/40 transition-all duration-300 transform hover:scale-105"
+                className="text-center p-3 md:p-4 rounded-xl bg-linear-to-br from-purple-500/10 to-cyan-500/5 border border-purple-500/20 hover:border-purple-500/40 transition-all duration-300 transform hover:scale-105"
               >
-                <div className="text-xl md:text-2xl font-bold bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent mb-1">
+                <div className="text-xl md:text-2xl font-bold bg-linear-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent mb-1">
                   {info.value}
                 </div>
                 <p className="text-xs text-gray-400 uppercase tracking-wider font-semibold">

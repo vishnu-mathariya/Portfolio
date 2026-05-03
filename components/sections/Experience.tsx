@@ -65,7 +65,7 @@ export default function Experience() {
                         className="flex items-start gap-2 md:gap-3 text-gray-300 text-xs sm:text-sm animate-fade-in-up"
                         style={{ animationDelay: `${0.3 + idx * 0.1}s` }}
                       >
-                        <span className="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full gradient-primary mt-1 md:mt-2 flex-shrink-0" />
+                        <span className="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full gradient-primary mt-1 md:mt-2 shrink-0" />
                         <span>{achievement}</span>
                       </li>
                     ))}

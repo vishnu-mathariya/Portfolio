@@ -20,7 +20,7 @@ export default function Skills() {
               Proficient in various front-end and back-end technologies, with
               hands-on experience across multiple domains
             </p>
-            <div className="h-1 w-20 md:w-32 bg-gradient-to-r from-purple-500 to-cyan-500 rounded-full mt-4 md:mt-6" />
+            <div className="h-1 w-20 md:w-32 bg-linear-to-br from-purple-500 to-cyan-500 rounded-full mt-4 md:mt-6" />
           </div>
         </ScrollReveal>
 
@@ -71,7 +71,7 @@ function SkillCard({ skill, index, delay }: SkillCardProps) {
   return (
     <ScrollReveal delay={delay} animation="fadeInUp">
       <div className="group relative h-full">
-        <div className="h-full p-6 md:p-8 rounded-xl bg-gradient-to-br from-slate-800/40 to-slate-900/20 border border-purple-500/15 hover:border-purple-500/50 transition-all duration-300 hover:bg-slate-800/60 hover:shadow-lg hover:shadow-purple-500/20 flex flex-col items-center justify-center text-center cursor-pointer transform hover:scale-105">
+        <div className="h-full p-6 md:p-8 rounded-xl bg-linear-to-br from-slate-800/40 to-slate-900/20 border border-purple-500/15 hover:border-purple-500/50 transition-all duration-300 hover:bg-slate-800/60 hover:shadow-lg hover:shadow-purple-500/20 flex flex-col items-center justify-center text-center cursor-pointer transform hover:scale-105">
           {/* Skill Icon */}
           <div className="text-4xl md:text-5xl mb-3 group-hover:scale-125 transition-transform duration-300 transform group-hover:-translate-y-1">
             {skill.icon}

@@ -38,7 +38,7 @@ export default function Hero() {
                   stagger={false}
                 />
 
-                <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-[length:200%_auto] bg-clip-text text-transparent animate-gradient">
+                <span className="bg-linear-to-r from-purple-400 via-pink-400 to-blue-400 bg-size-[200%_auto] bg-clip-text text-transparent animate-gradient">
                   Vishnu Mathariya
                 </span>
               </h1>

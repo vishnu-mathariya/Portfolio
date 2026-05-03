@@ -140,15 +140,15 @@ export default function Contact() {
         {/* HEADER  */}
         <div className="mb-12 md:mb-16 text-center px-4">
           <ScrollReveal>
-            <div className="inline-block mb-4 px-3 md:px-4 py-2 bg-gradient-to-r from-purple-600/20 to-pink-600/20 rounded-full border border-purple-600/30">
-              <span className="text-sm font-semibold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+            <div className="inline-block mb-4 px-3 md:px-4 py-2 bg-linear-to-r from-purple-600/20 to-pink-600/20 rounded-full border border-purple-600/30">
+              <span className="text-sm font-semibold bg-linear-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
                 GET IN TOUCH
               </span>
             </div>
           </ScrollReveal>
 
           <ScrollReveal delay={0.1}>
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-purple-400 via-pink-400 to-orange-400 bg-clip-text text-transparent">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-linear-to-r from-purple-400 via-pink-400 to-orange-400 bg-clip-text text-transparent">
               <AnimatedText text="Let's Create Something Amazing" />
             </h2>
           </ScrollReveal>
@@ -173,7 +173,7 @@ export default function Contact() {
                 }}
                 className="cursor-pointer group relative overflow-hidden px-6 md:px-8 py-3 md:py-4 rounded-xl font-semibold transition-all duration-300 hover:scale-105 active:scale-95"
               >
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 group-hover:scale-110 transition-transform duration-300" />
+                <div className="absolute inset-0 bg-linear-to-r from-purple-600 to-pink-600 group-hover:scale-110 transition-transform duration-300" />
                 <span className="relative text-white flex items-center gap-2">
                   ⬇️ Download Resume
                 </span>
@@ -184,7 +184,7 @@ export default function Contact() {
                 target="_blank"
                 className="group relative overflow-hidden px-6 md:px-8 py-3 md:py-4 rounded-xl font-semibold transition-all duration-300 hover:scale-105 active:scale-95"
               >
-                <div className="absolute inset-0 bg-gradient-to-r from-cyan-600 to-blue-600 group-hover:scale-110 transition-transform duration-300" />
+                <div className="absolute inset-0 bg-linear-to-r from-cyan-600 to-blue-600 group-hover:scale-110 transition-transform duration-300" />
                 <span className="relative text-white flex items-center gap-2">
                   👁️ View Resume
                 </span>
@@ -197,11 +197,11 @@ export default function Contact() {
         <div className="max-w-3xl mx-auto px-3 sm:px-4 md:px-0">
           <ScrollReveal>
             <div className="relative group">
-              <div className="absolute inset-0 bg-gradient-to-r from-purple-600 via-pink-600 to-orange-600 rounded-lg sm:rounded-xl md:rounded-2xl blur opacity-20 group-hover:opacity-30 transition-opacity duration-300" />
+              <div className="absolute inset-0 bg-linear-to-r from-purple-600 via-pink-600 to-orange-600 rounded-lg sm:rounded-xl md:rounded-2xl blur opacity-20 group-hover:opacity-30 transition-opacity duration-300" />
 
               <form
                 onSubmit={handleSubmit}
-                className="relative p-4 sm:p-6 md:p-10 lg:p-12 bg-gradient-to-br from-slate-800/80 to-slate-900/80 rounded-lg sm:rounded-xl md:rounded-2xl border border-slate-700/50 backdrop-blur-sm"
+                className="relative p-4 sm:p-6 md:p-10 lg:p-12 bg-linear-to-br from-slate-800/80 to-slate-900/80 rounded-lg sm:rounded-xl md:rounded-2xl border border-slate-700/50 backdrop-blur-sm"
               >
                 <h3 className="text-xl md:text-2xl font-bold mb-6 md:mb-8 text-white">
                   Send Me a Message
@@ -295,8 +295,8 @@ export default function Contact() {
                   disabled={isSubmitting}
                   className="relative w-full group/btn px-6 md:px-8 py-3 md:py-4 text-sm md:text-base font-bold rounded-lg transition-all duration-300 overflow-hidden"
                 >
-                  <div className="absolute inset-0 bg-gradient-to-r from-purple-600 via-pink-600 to-orange-600 group-hover/btn:scale-105 transition-transform duration-300" />
-                  <div className="absolute inset-0 bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 opacity-0 group-hover/btn:opacity-100 blur transition-opacity duration-300" />
+                  <div className="absolute inset-0 bg-linear-to-r from-purple-600 via-pink-600 to-orange-600 group-hover/btn:scale-105 transition-transform duration-300" />
+                  <div className="absolute inset-0 bg-linear-to-r from-purple-500 via-pink-500 to-orange-500 opacity-0 group-hover/btn:opacity-100 blur transition-opacity duration-300" />
                   <span className="relative flex items-center justify-center gap-2 text-white">
                     {isSubmitting ? (
                       <>
@@ -316,7 +316,7 @@ export default function Contact() {
 
                 {/* Success/Error Message */}
                 {submitMessage && (
-                  <div className="mt-4 p-3 md:p-4 bg-gradient-to-r from-green-600/20 to-emerald-600/20 border border-green-600/30 rounded-lg text-green-400 text-center text-sm animate-fadeIn">
+                  <div className="mt-4 p-3 md:p-4 bg-linear-to-r from-green-600/20 to-emerald-600/20 border border-green-600/30 rounded-lg text-green-400 text-center text-sm animate-fadeIn">
                     {submitMessage}
                   </div>
                 )}
