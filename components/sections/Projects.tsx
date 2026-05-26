@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Projects() {
   return (
-    <section id="skills" className="relative py-20 md:py-32 overflow-hidden">
+    <section id="projects" className="relative py-20 md:py-32 overflow-hidden">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         {/* <ScrollReveal className="text-center mb-12 md:mb-20">

@@ -164,7 +164,7 @@ export default function Contact() {
         <div className="mb-12 md:mb-16 px-4 md:px-0">
           <ScrollReveal>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center flex-wrap">
-              <button
+              {/* <button
                 onClick={() => {
                   const link = document.createElement("a");
                   link.href = "/resume/Vishnu-Mathariya-React-Developer.pdf";
@@ -177,10 +177,11 @@ export default function Contact() {
                 <span className="relative text-white flex items-center gap-2">
                   ⬇️ Download Resume
                 </span>
-              </button>
+              </button> */}
 
               <a
-                href="/resume/Vishnu-Mathariya-React-Developer.pdf"
+                
+                href ="\resume\Vishnu-Mathariya-React-Developer .pdf"
                 target="_blank"
                 className="group relative overflow-hidden px-6 md:px-8 py-3 md:py-4 rounded-xl font-semibold transition-all duration-300 hover:scale-105 active:scale-95"
               >

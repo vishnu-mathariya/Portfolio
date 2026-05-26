@@ -36,8 +36,23 @@ export const projectsData = [
     ],
     category: "Full Stack",
   },
+
+ {
+  id: 4,
+  title: "ResQMe – Emergency Assistance Platform",
+  description:
+    "Developed a responsive emergency assistance platform using React.js, Redux, and REST APIs with optimized user experience.",
+  technologies: [
+    "React.js",
+    "Redux",
+    "Tailwind CSS",
+    "JavaScript",
+    "REST APIs",
+  ],
+  category: "Frontend",
+},
   {
-    id: 4,
+    id: 5,
     title: "E-Commerce Dashboard",
     description:
       "Admin dashboard for managing products, orders, and analytics with real-time data visualization and responsive design.",
@@ -51,7 +66,7 @@ export const projectsData = [
     category: "Frontend",
   },
   {
-    id: 5,
+    id: 6,
     title: "Real Estate Marketplace (MVP)",
     description:
       "Built a React real estate platform with role-based dashboards, property management, and visit scheduling using reusable components and Context API.",
@@ -65,7 +80,7 @@ export const projectsData = [
     category: "Frontend",
   },
   {
-    id: 6,
+    id: 7,
     title: "Book-Verse",
     description:
       "Built a React-based book search application using the Google Books API, allowing users to explore book details and manage favorites with efficient state management and routing.",
@@ -80,7 +95,7 @@ export const projectsData = [
   },
 
   {
-    id: 7,
+    id: 8,
     title: "Salvus-Tech",
     description:
       "A dynamic and scalable web platform designed for Salvus Technology to present digital solutions, enhance brand presence, and improve user interaction through modern design.",
@@ -95,7 +110,7 @@ export const projectsData = [
   },
 
   {
-  id: 8,
+  id: 9,
   title: "Personal Portfolio Website",
   description:
     "Built a scalable portfolio using Next.js and TypeScript with reusable UI, theme switching, and optimized performance.",
@@ -150,21 +165,39 @@ export const skillsData = [
 
 // Experience Data
 export const experienceData = [
+
   {
-    id: 1,
-    company: "Smartwork Ideas Pvt Ltd",
-    role: "Software Engineer",
-    period: "April 2022 – April 2025",
-    description: "Building responsive interfaces and scalable web applications",
+  id: 1,
+  company: "Codenza Technologies LLP",
+  role: "Software Engineer (Freelance)",
+  period: "Feb 2026 – April 2026",
+  description:
+    "Developed responsive and scalable frontend modules for an emergency assistance and service platform.",
+  achievements: [
+    "Built frontend features using React.js, JavaScript, Redux, and Tailwind CSS",
+    "Integrated REST APIs and created reusable UI components",
+    "Improved application performance and maintainability",
+    "Collaborated with backend and design teams to deliver production-ready features",
+    "Optimized cross-device compatibility for responsive user experience",
+  ],
+},
+
+   {
+    id: 2,
+    company: "FillRacks Pvt Ltd",
+    role: "Software Engineer (Freelance)",
+    period: "June 2025 – Nov 2025",
+    description: "Frontend development for inventory management system",
     achievements: [
-      "Built responsive interfaces using React.js, JavaScript, and Tailwind CSS",
-      "Consumed REST APIs to handle dynamic data across multiple modules",
-      "Structured modular components to simplify code organization and improve scalability",
-      "Participated in Agile processes and contributed to code reviews",
+      "Engineered frontend features using Next.js and TypeScript",
+      "Structured UI layouts and design systems using Tailwind CSS and Shadcn UI",
+      "Ensured smooth interaction with backend systems",
+      "Improved performance on different screen sizes",
     ],
   },
+  
   {
-    id: 2,
+    id: 3,
     company: "NeoSOFT Pvt Ltd",
     role: "Software Engineer",
     period: "April 2025 – June 2025",
@@ -177,17 +210,19 @@ export const experienceData = [
       "Ensured responsive design across multiple devices",
     ],
   },
+ 
+
   {
-    id: 3,
-    company: "FillRacks Pvt Ltd",
-    role: "Software Engineer (Freelance)",
-    period: "June 2025 – Nov 2025",
-    description: "Frontend development for inventory management system",
+    id: 4,
+    company: "Smartwork Ideas Pvt Ltd",
+    role: "Software Engineer",
+    period: "April 2022 – April 2025",
+    description: "Building responsive interfaces and scalable web applications",
     achievements: [
-      "Engineered frontend features using Next.js and TypeScript",
-      "Structured UI layouts and design systems using Tailwind CSS and Shadcn UI",
-      "Ensured smooth interaction with backend systems",
-      "Improved performance on different screen sizes",
+      "Built responsive interfaces using React.js, JavaScript, and Tailwind CSS",
+      "Consumed REST APIs to handle dynamic data across multiple modules",
+      "Structured modular components to simplify code organization and improve scalability",
+      "Participated in Agile processes and contributed to code reviews",
     ],
   },
 ];
