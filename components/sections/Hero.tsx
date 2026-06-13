@@ -43,7 +43,7 @@ export default function Hero() {
                 </span>
               </h1>
               <p className="text-base sm:text-lg md:text-xl text-gray-400 leading-relaxed max-w-md animate-fade-in delay-200">
-                React Developer with 3+ years of experience building responsive
+                React Developer with 4+ years of experience building responsive
                 and scalable web applications. Specialized in React.js, Next.js,
                 and modern frontend technologies.
               </p>
@@ -63,6 +63,17 @@ export default function Hero() {
               >
                 Get In Touch
               </Link>
+
+              <a
+                href="\resume\Vishnu-Mathariya-React-Developer .pdf"
+                target="_blank"
+                className="group relative overflow-hidden px-6 md:px-8 py-3 md:py-4 rounded-xl font-semibold transition-all duration-300 hover:scale-105 active:scale-95"
+              >
+                <div className="absolute inset-0 bg-linear-to-r from-cyan-600 to-blue-600 group-hover:scale-110 transition-transform duration-300" />
+                <span className="relative text-white flex items-center gap-2">
+                  👁️ View Resume
+                </span>
+              </a>
             </div>
 
             {/* Scroll Indicator */}

@@ -160,7 +160,7 @@ export default function Contact() {
           </ScrollReveal>
         </div>
 
-        {/* RESUME (UNCHANGED) */}
+        {/* RESUME  */}
         <div className="mb-12 md:mb-16 px-4 md:px-0">
           <ScrollReveal>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center flex-wrap">
