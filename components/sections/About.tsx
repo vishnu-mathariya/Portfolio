@@ -28,7 +28,7 @@ export default function About() {
           {/* Left Content */}
           <ScrollReveal animation="fadeInLeft" className="space-y-6">
             <p className="text-gray-300 leading-relaxed text-base sm:text-lg">
-              I&apos;m a React Developer with 3+ years of experience building
+              I&apos;m a React Developer with 4+ years of experience building
               responsive and scalable web applications. My passion lies in
               creating beautiful user interfaces with clean, efficient code. I
               specialize in modern JavaScript frameworks, with expertise in
@@ -129,7 +129,7 @@ export default function About() {
         >
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 max-w-4xl mx-auto">
             {[
-              { label: "Experience", value: "3+ Years" },
+              { label: "Experience", value: "4+ Years" },
               { label: "Location", value: "Pune, India" },
               { label: "Role", value: "Frontend Dev" },
               { label: "Status", value: "Available" },
