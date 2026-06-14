@@ -76,7 +76,7 @@ export default function Hero() {
               </a> */}
 
               <a
-                href="\resume\Vishnu-Mathariya-React-Developer .pdf"
+                href="\resume\Vishnu_Mathariya_Frontend_Developer_ReactJS.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="
