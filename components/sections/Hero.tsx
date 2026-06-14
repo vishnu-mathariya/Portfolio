@@ -64,7 +64,7 @@ export default function Hero() {
                 Get In Touch
               </Link>
 
-              <a
+              {/* <a
                 href="\resume\Vishnu-Mathariya-React-Developer .pdf"
                 target="_blank"
                 className="group relative overflow-hidden px-6 md:px-8 py-3 md:py-4 rounded-xl font-semibold transition-all duration-300 hover:scale-105 active:scale-95"
@@ -72,6 +72,92 @@ export default function Hero() {
                 <div className="absolute inset-0 bg-linear-to-r from-cyan-600 to-blue-600 group-hover:scale-110 transition-transform duration-300" />
                 <span className="relative text-white flex items-center gap-2">
                   👁️ View Resume
+                </span>
+              </a> */}
+
+              <a
+                href="\resume\Vishnu-Mathariya-React-Developer .pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="
+    group
+    relative
+    overflow-hidden
+    px-6
+    md:px-8
+    py-3
+    md:py-4
+    rounded-xl
+    font-semibold
+    text-white
+    transition-all
+    duration-500
+    hover:scale-105
+    hover:-translate-y-1
+    active:scale-95
+    shadow-lg
+    hover:shadow-[0_0_40px_rgba(6,182,212,0.6)]
+  "
+              >
+                {/* Gradient Background */}
+                <div
+                  className="
+      absolute
+      inset-0
+      bg-gradient-to-r
+      from-cyan-600
+      via-blue-600
+      to-purple-600
+      transition-all
+      duration-500
+      group-hover:scale-110
+    "
+                />
+
+                {/* Shine Effect */}
+                <div className="absolute inset-0 overflow-hidden rounded-xl">
+                  <div
+                    className="
+        absolute
+        -left-24
+        top-0
+        h-full
+        w-16
+        rotate-12
+        bg-white/20
+        blur-md
+        transition-all
+        duration-1000
+        group-hover:left-[120%]
+      "
+                  />
+                </div>
+
+                {/* Border Glow */}
+                <div
+                  className="
+      absolute
+      inset-0
+      rounded-xl
+      border
+      border-white/10
+      group-hover:border-cyan-300/40
+      transition-all
+      duration-500
+    "
+                />
+
+                {/* Button Content */}
+                <span className="relative z-10 flex items-center gap-2">
+                  {/* <span className="text-lg transition-transform duration-300 group-hover:scale-110">
+      👁️
+    </span> */}
+
+                  <span>View Resume</span>
+
+                  {/* <span className="transition-all duration-300 group-hover:translate-x-2">
+      →
+    </span> */}
                 </span>
               </a>
             </div>
