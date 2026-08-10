@@ -150,8 +150,8 @@ export default function Hero() {
                 {/* Button Content */}
                 <span className="relative z-10 flex items-center gap-2">
                   {/* <span className="text-lg transition-transform duration-300 group-hover:scale-110">
-      👁️
-    </span> */}
+                  👁️
+                  </span> */}
 
                   <span>View Resume</span>
 
