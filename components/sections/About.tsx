@@ -131,7 +131,7 @@ export default function About() {
             {[
               { label: "Experience", value: "4+ Years" },
               { label: "Location", value: "Pune, India" },
-              { label: "Role", value: "Frontend Dev" },
+              { label: "Role", value: "Frontend Developer" },
               { label: "Status", value: "Available" },
             ].map((info, index) => (
               <div
